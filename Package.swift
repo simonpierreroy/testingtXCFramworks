@@ -14,7 +14,6 @@ let package = Package(
                 "FirebaseCore",
                 "FirebaseCoreDiagnostics",
                 "FirebaseInstallations",
-                "GoogleAppMeasurement",
                 "GoogleDataTransport",
                 "GoogleUtilities",
                 "nanopb",
@@ -42,11 +41,6 @@ let package = Package(
             name: "FirebaseInstallations",
             url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/FirebaseInstallations-6.34.0.xcframework.zip",
             checksum: "3cbda9ffba5be037344867b8450bba8447cc1c0a74b4404c4bc94a7607729ed6"
-        ),
-        .binaryTarget(
-            name: "GoogleAppMeasurement",
-            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/GoogleAppMeasurement-6.34.0.framework.zip",
-            checksum: "eabe4756f2c71f46546327629dae28d95c5b6b71635d1f344a1fb1a925a4d461"
         ),
         .binaryTarget(
             name: "GoogleDataTransport",
