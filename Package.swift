@@ -53,6 +53,11 @@ let package = Package(
             checksum: "5d9d51b846fadb8a4800008aafd4934453b91997d34e75e97ed31196e939c72e"
         ),
         .binaryTarget(
+            name: "GoogleUtilities",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/GoogleUtilities-6.34.0.xcframework.zip",
+            checksum: "f118f2bd2c0d39d1fe32e049cc484d06e476df910b39f321a9bf0216c71f5b8e"
+        ),
+        .binaryTarget(
             name: "nanopb",
             url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/nanopb-6.34.0.xcframework.zip",
             checksum: "c53b7f271a2a82c80b33e1297cb8bec70428561679eba5a8651da536ee333709"
