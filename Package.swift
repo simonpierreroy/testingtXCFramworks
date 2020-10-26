@@ -16,6 +16,7 @@ let package = Package(
                 "FirebaseInstallations",
                 "GoogleAppMeasurement",
                 "GoogleDataTransport",
+                "GoogleUtilities",
                 "nanopb",
                 "PromisesObjC"
             ]),
