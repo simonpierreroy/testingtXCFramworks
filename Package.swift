@@ -8,21 +8,16 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Vendor",
-            targets: ["Vendor"]),
+            name: "FirebaseCrashlytics",
+            targets: ["FirebaseCrashlytics"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
+    dependencies: [],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "Vendor",
-            dependencies: []),
-        .testTarget(
-            name: "VendorTests",
-            dependencies: ["Vendor"]),
+        .binaryTarget(
+            name: "FirebaseCrashlytics",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/v6.23/FirebaseCrashlytics-6.23.xcframework.zip",
+            checksum: "808047a82c339d1c3d903ae128788057f8bb52c36016e0f8e5978ecdaed5fce0"
+        )
+        
     ]
 )
