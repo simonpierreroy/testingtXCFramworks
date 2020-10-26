@@ -8,8 +8,17 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "FirebaseCrashlytics",
-            targets: ["FirebaseCrashlytics", "FirebaseCore", "FirebaseCoreDiagnostics"]),
+            name: "FirebaseDependencies",
+            targets: [
+                "FirebaseCrashlytics",
+                "FirebaseCore",
+                "FirebaseCoreDiagnostics",
+                "FirebaseInstallations",
+                "GoogleAppMeasurement",
+                "GoogleDataTransport",
+                "nanopb",
+                "PromisesObjC"
+            ]),
     ],
     dependencies: [],
     targets: [
@@ -27,6 +36,31 @@ let package = Package(
             name: "FirebaseCoreDiagnostics",
             url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/FirebaseCoreDiagnostics-6.34.0.xcframework.zip",
             checksum: "2b13bac52bd324e4c709d3d1cd9c4c66edb6367e62cb2b072d4c3caeece78d8e"
+        ),
+        .binaryTarget(
+            name: "FirebaseInstallations",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/FirebaseInstallations-6.34.0.xcframework.zip",
+            checksum: "3cbda9ffba5be037344867b8450bba8447cc1c0a74b4404c4bc94a7607729ed6"
+        ),
+        .binaryTarget(
+            name: "GoogleAppMeasurement",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/GoogleAppMeasurement-6.34.0.framework.zip",
+            checksum: "eabe4756f2c71f46546327629dae28d95c5b6b71635d1f344a1fb1a925a4d461"
+        ),
+        .binaryTarget(
+            name: "GoogleDataTransport",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/GoogleDataTransport-6.34.0.xcframework.zip",
+            checksum: "5d9d51b846fadb8a4800008aafd4934453b91997d34e75e97ed31196e939c72e"
+        ),
+        .binaryTarget(
+            name: "nanopb",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/nanopb-6.34.0.xcframework.zip",
+            checksum: "c53b7f271a2a82c80b33e1297cb8bec70428561679eba5a8651da536ee333709"
+        ),
+        .binaryTarget(
+            name: "PromisesObjC",
+            url: "https://github.com/simonpierreroy/testingtXCFramworks/releases/download/6.34.0/PromisesObjC-6.34.0.xcframework.zip",
+            checksum: "4a5b962862c4a7c73c958a660820ea7d30f75c010779492ffd0a6c4121defcee"
         )
         
     ]
